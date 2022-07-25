@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-about">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="container-form">
+          <div class="form-trial">
+            <p>Try it free 7 days then $20/mo. thereafter</p>
+          </div>
+          <div class="form-card">
+            <div class="form">
+              <div class="input">
+                <input
+                  class="form__input"
+                  type="text"
+                  id="fName"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="fName" class="form__label">First Name</label>
+                <p class="er" id="fNameErr">First Name cannot be empty</p>
+                <img class="errImg" src="images/icon-error.svg" alt="err" />
+              </div>
+              <div class="input">
+                <input
+                  class="form__input"
+                  type="text"
+                  id="lName"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="lName" class="form__label"> Last Name</label>
+                <p class="er" id="lNameErr">Last Name cannot be empty</p>
+                <img class="errImg" src="images/icon-error.svg" alt="err" />
+              </div>
+              <div class="input">
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="email" class="form__label"> Email Adress</label>
+                <p class="err" id="emailErr">Error</p>
+                <img class="errImg" src="images/icon-error.svg" alt="err" />
+              </div>
+              <div class="input">
+                <input
+                  class="form__input"
+                  type="password"
+                  id="pass"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="pass" class="form__label"> Password</label>
+                <p class="er" id="passErr">Password cannot be empty</p>
+                <img class="errImg" src="images/icon-error.svg" alt="err" />
+              </div>
+              <div id="formBtn" class="form-btn">
+                <p>CLAIM YOU FREE TRAIL</p>
+              </div>
+            </div>
+            <div class="tos">
+              <p>
+                By clicking the button, you are agreeing to our
+                <a href="#/">Terms and Services</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Balog Alin</a>.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-position: center;
+  background-color: hsl(0deg, 100%, 74%);
+  background-image: url("images/bg-intro-desktop.png");
+  background-size: 100%;
+  height: 100%;
+}
+
+main {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+input,
+input:focus,
+input:active {
+  box-shadow: unset;
+  border: none;
+  outline: none;
+}
+
+.attribution {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: hsl(249deg, 10%, 26%);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(248deg, 32%, 49%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  height: calc(100vh - 1.6rem);
+}
+
+.container-about {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin-right: 5rem;
+}
+.container-about h1 {
+  margin-bottom: 3rem;
+}
+
+.container-form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-form .form-trial {
+  padding: 1.3rem;
+  text-align: center;
+  height: 100%;
+  background-color: hsl(248deg, 32%, 49%);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.357);
+}
+.container-form .form-card {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 50rem;
+  height: 100%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.357);
+}
+.container-form .form-card .form {
+  display: flex;
+  flex-direction: column;
+}
+.container-form .form-card .form .input {
+  width: 100%;
+  position: relative;
+}
+.input input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 2.5rem 0 2.5rem 4rem;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  height: 4.5rem;
+  border-radius: 0.7rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  background-color: white;
+}
+.container-form .form-card .form .input .form__label {
+  cursor: text;
+  font-size: 2rem;
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: hsl(246deg, 25%, 77%);
+  transition: top 0.2s ease-in, left 0.2s ease-in, font-size 0.2s ease-in,
+    color 0.2s ease-in;
+  background-color: white;
+}
+.input img {
+  cursor: none;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  opacity: 0;
+}
+
+.input .er {
+  color: hsl(0deg, 100%, 74%);
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+.input .err {
+  color: hsl(0deg, 100%, 74%);
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+.container-form .form-card .form .form-btn {
+  padding: 1rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 0.7rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  box-shadow: none;
+  transition: box-shadow 0.3s;
+}
+
+.container-form .form-card .form .form-btn p {
+  font-weight: 600;
+}
+.container-form .form-card .form-btn:hover {
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.357);
+}
+.container-form
+  .form-card
+  .form__input:not(:-moz-placeholder-shown).form__input:not(:focus)
+  ~ .form__label {
+  top: -1.2rem;
+  font-size: 1.5rem;
+  background-color: white;
+  color: hsl(248deg, 32%, 49%);
+}
+.container-form
+  .form-card
+  .form__input:not(:-ms-input-placeholder).form__input:not(:focus)
+  ~ .form__label {
+  top: -1.2rem;
+  font-size: 1.5rem;
+  background-color: white;
+  color: hsl(248deg, 32%, 49%);
+}
+.container-form .form-card .form__input:focus ~ .form__label,
+.container-form
+  .form-card
+  .form__input:not(:placeholder-shown).form__input:not(:focus)
+  ~ .form__label {
+  top: -1.2rem;
+  font-size: 1.5rem;
+  background-color: white;
+  color: hsl(248deg, 32%, 49%);
+}
+.container-form .form-card .form-btn {
+  background-color: hsl(154deg, 59%, 51%);
+}
+.container-form .form-card .tos {
+  text-align: center;
+}
+.container-form .form-card .tos p {
+  color: hsl(246deg, 25%, 77%);
+  font-size: 1rem;
+}
+.container-form .form-card .tos p a {
+  color: hsl(0deg, 100%, 74%);
+}
+
+.input.success input {
+  border: 1px solid hsl(249deg, 10%, 26%);
+  transition: border 0.3s;
+}
+
+.input.error input {
+  transition: border 0.3s;
+  border: 1px solid hsl(0deg, 100%, 74%);
+}
+
+.input.error p {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.input.error img {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    height: 100%;
+    background-image: url("images/bg-intro-mobile.png");
+  }
+  .container {
+    width: 90%;
+    flex-direction: column;
+  }
+  .container-about {
+    margin: 0;
+    margin-top: 5rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .container-form {
+    width: 100%;
+  }
+  .container-form .form-trial {
+    width: 100%;
+  }
+  .container-form .form-card {
+    width: 100%;
+  }
+  footer {
+    margin-top: 10rem;
+  }
+} /*# sourceMappingURL=style.css.map */
