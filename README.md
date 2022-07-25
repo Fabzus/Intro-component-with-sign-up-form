@@ -21,7 +21,7 @@ This is a solution to the [Intro component with sign-up form](hhttps://www.front
 
 ### Links
 
-- Solution URL: [github](https://github.com/Fabzus/Ping-single-column-coming-soon-page)
+- Solution URL: [github](https://github.com/Fabzus/Intro-component-with-sign-up-form)
 - Live Site URL: [github](https://fabzus.github.io/qr-code-challenge.github.io/)
 
 ## My process
